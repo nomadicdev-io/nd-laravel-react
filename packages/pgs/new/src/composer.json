@@ -1,0 +1,11 @@
+{
+    "name": "pgs/new",
+    "description": "Admin Module for managing transalation data",
+    "authors": [
+        {
+            "name": "Shan",
+            "email": "shanavas@pgsuae.com"
+        }
+    ],
+    "require": {}
+}
