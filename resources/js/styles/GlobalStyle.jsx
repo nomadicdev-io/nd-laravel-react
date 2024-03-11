@@ -4,9 +4,13 @@ const GlobalStyle = createGlobalStyle`
 
     :root {
         --font-family: 'Inter', san-serif;
-        --primary-color: #7678ed;
-        --secondary-color: #65afff;
-        --text-color: #253031;
+        --primary-color: #36c670;
+        --primary-color-600: #268b65;
+        --secondary-color: #75b9be;
+        --secondary-color-600: #588b8f;
+        --third-color: #90baad;
+        --third-color-600: #6c8b82;
+        --text-color: #444444;
         --bg-color: #FFF;
         --white-color: #FFF;
         --border-color: #e1e1e1;
