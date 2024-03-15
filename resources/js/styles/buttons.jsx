@@ -27,7 +27,6 @@ export const ButtonStyled = styled.button`
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 0.75rem;
     font-size: 0.9rem;
     font-weight: 500;
     color: var(--white-color);
@@ -210,7 +209,7 @@ export const IconButtonStyled = styled.button`
         background-color: transparent;
         box-shadow: 0px 0px 0px 1px var(--text-color);
         color: var(--text-color);
-        
+
         &:hover{
             color: var(--white-color);
             background-color: var(--text-color-600);

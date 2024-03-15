@@ -1,5 +1,7 @@
 import { HeaderNavStyled, HeaderStyled, HeaderWrapperStyled } from "../../styles/header"
+import { PGSButton } from "../common/PGSButtons"
 import PGSContainer from "./PGSContainer"
+import { IoGlobeOutline } from "react-icons/io5";
 
 const PGSHeader = () => {
   return (
@@ -30,6 +32,8 @@ const PGSHeader = () => {
                       </li>
                     </ul>
                 </HeaderNavStyled>
+
+                <PGSButton title={'Arabic'} icon={<IoGlobeOutline />} type={'button'} className={'primary_'}/>
 
             </HeaderWrapperStyled>
         </PGSContainer>
