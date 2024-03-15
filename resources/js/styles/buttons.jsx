@@ -109,7 +109,7 @@ export const ButtonStyled = styled.button`
 
         &:hover{
             background-color: var(--primary-color-600);
-            box-shadow: 0px 1px 10px 0px var(--primary-color);
+            box-shadow: 0px 1px 10px 0px var(--primary-color-600);
         }
 
         &.outline_{
@@ -135,7 +135,7 @@ export const ButtonStyled = styled.button`
 
         &:hover{
             background-color: var(--secondary-color-600);
-            box-shadow: 0px 1px 10px 0px var(--secondary-color);
+            box-shadow: 0px 1px 10px 0px var(--secondary-color-600);
         }
 
         &.outline_{
@@ -161,7 +161,7 @@ export const ButtonStyled = styled.button`
 
         &:hover{
             background-color: var(--third-color-600);
-            box-shadow: 0px 1px 10px 0px var(--third-color);
+            box-shadow: 0px 1px 10px 0px var(--third-color-600);
         }
 
         &.outline_{

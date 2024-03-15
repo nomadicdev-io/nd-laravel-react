@@ -9,8 +9,9 @@ const GlobalStyle = createGlobalStyle`
         --secondary-color: #75b9be;
         --secondary-color-600: #588b8f;
         --third-color: #90baad;
-        --third-color-600: #6c8b82;
+        --third-color-600: #59776e;
         --text-color: #444444;
+        --text-color-300: #505050;
         --text-color-600: #101010;
         --bg-color: #FFF;
         --bg-color-300: #fafafa;
@@ -18,7 +19,9 @@ const GlobalStyle = createGlobalStyle`
         --border-color: #eaf1ef;
         --green-color: #15d060;
         --yellow-color: #fecb34;
+        --yellow-color-600: #755700;
         --red-color: #ff4639;
+        --red-color-600: #9e281f;
     }
 
     ::-webkit-scrollbar {
@@ -108,14 +111,14 @@ const GlobalStyle = createGlobalStyle`
         padding-block: 1.5rem;
 
  
-        h4 {
+        &>h4 {
             position: relative;
             display: block;
             margin: 0;
             font-weight: 600;
             font-size: 1.35rem;
             margin-bottom: 0.5em;
-            color: var(--primary-color-600);
+            color: var(--text-color-300);
         }
     }
 
