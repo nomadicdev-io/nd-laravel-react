@@ -3,13 +3,19 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
 
     :root {
-        --font-family: 'Inter', san-serif;
-        --primary-color: #7678ed;
-        --secondary-color: #65afff;
-        --text-color: #253031;
+        --font-family: 'Poppins', san-serif;
+        --primary-color: #36c670;
+        --primary-color-600: #268b65;
+        --secondary-color: #75b9be;
+        --secondary-color-600: #588b8f;
+        --third-color: #90baad;
+        --third-color-600: #6c8b82;
+        --text-color: #444444;
+        --text-color-600: #101010;
         --bg-color: #FFF;
+        --bg-color-300: #fafafa;
         --white-color: #FFF;
-        --border-color: #e1e1e1;
+        --border-color: #eaf1ef;
         --green-color: #15d060;
         --yellow-color: #fecb34;
         --red-color: #ff4639;
@@ -81,7 +87,36 @@ const GlobalStyle = createGlobalStyle`
     }
     
     h1,h2,h3,h4,h5{
-        font-weight: 600;
+        font-weight: bold;
+    }
+
+    .info_grid{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .full_{
+            grid-column: 1/-1
+        }
+    }
+
+    .info_bar {
+        position: relative;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid var(--border-color);
+        padding-block: 1.5rem;
+
+ 
+        h4 {
+            position: relative;
+            display: block;
+            margin: 0;
+            font-weight: 600;
+            font-size: 1.35rem;
+            margin-bottom: 0.5em;
+            color: var(--primary-color-600);
+        }
     }
 
 `;

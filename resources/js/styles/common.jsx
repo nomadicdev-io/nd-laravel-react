@@ -38,8 +38,38 @@ export const SectionStyled = styled.div`
     width: 100%;
     overflow: hidden;
     padding-block: 5rem;
+
+    &.bg_grey{
+        background-color: var(--bg-color-300);
+    }
+
+    &.padding_block_sm{
+        padding-block: 2.5rem;
+    }
+
 `;
 
 export const SectionTitleStyled = styled.div`
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
 
+    .title_{
+        position: relative;
+        display: block;
+
+        h2{
+            position: relative;
+            display: block;
+            margin: 0;
+            padding: 0;
+            font-size: 2.25rem;
+            font-weight: bold;
+        }
+    }
 `;

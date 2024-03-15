@@ -1,9 +1,9 @@
 import React from 'react'
 import { SectionStyled } from '../../styles/common'
 
-const PGSSection = ({children}) => {
+const PGSSection = ({children, className}) => {
   return (
-    <SectionStyled>
+    <SectionStyled className={className}>
         {children}
     </SectionStyled>
   )

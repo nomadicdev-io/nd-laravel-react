@@ -5,8 +5,6 @@ export const HeaderStyled = styled.header`
     display: block;
     width: 100%;
     height: auto;
-    background-color: var(--primary-color);
-    color: var(--white-color);
 `;
 
 export const HeaderWrapperStyled = styled.div`
@@ -15,18 +13,24 @@ export const HeaderWrapperStyled = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 4.5rem;
+    padding-block: 1.5rem;
 
-    h2{
+    .nav_link{
         position: relative;
-        display: block;
-        margin: 0;
-        font-size: 1.25rem;
+        display: inline-block;
+        width: auto;
+        height: 100%;
+        height: 1.65rem;
+
+        img{
+            width: auto;
+            height: 100%;
+        }
     }
 
 `;
 
-export const HeaderNavStyles = styled.nav`
+export const HeaderNavStyled = styled.nav`
     position: relative;
     display: block;
     width: auto;
@@ -36,10 +40,26 @@ export const HeaderNavStyles = styled.nav`
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        gap:2rem;
 
         li{
             position: relative;
             display: block;
+
+            a{
+                position: relative;
+                display: inline-block;
+                color: var(--text-color);
+                font-size: 0.85rem;
+                font-weight: 600;
+                overflow: hidden;
+
+                &.active_{
+                    color: var(--primary-color);
+
+        
+                }
+            }
         }
     }
 
