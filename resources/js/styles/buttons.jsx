@@ -181,6 +181,84 @@ export const ButtonStyled = styled.button`
             }
         }
     }
+
+    &.success_{
+        background-color: var(--green-color);
+
+        &:hover{
+            background-color: var(--green-color-600);
+            box-shadow: 0px 1px 10px 0px var(--third-color-600);
+        }
+
+        &.outline_{
+            background-color: transparent;
+            box-shadow: 0px 0px 0px 1px var(--green-color);
+            color: var(--green-color);
+
+            .icon_{
+                &:before{
+                    background-color: var(--green-color);
+                }
+            }
+
+            &:hover{
+                color: var(--white-color);
+                background-color: var(--green-color);
+            }
+        }
+    }
+
+    &.warning_{
+        background-color: var(--yellow-color);
+
+        &:hover{
+            background-color: var(--yellow-color-600);
+            box-shadow: 0px 1px 10px 0px var(--yellow-color-600);
+        }
+
+        &.outline_{
+            background-color: transparent;
+            box-shadow: 0px 0px 0px 1px var(--yellow-color);
+            color: var(--yellow-color);
+
+            .icon_{
+                &:before{
+                    background-color: var(--yellow-color);
+                }
+            }
+
+            &:hover{
+                color: var(--white-color);
+                background-color: var(--yellow-color);
+            }
+        }
+    }
+
+    &.danger_{
+        background-color: var(--red-color);
+
+        &:hover{
+            background-color: var(--red-color-600);
+            box-shadow: 0px 1px 10px 0px var(--red-color-600);
+        }
+
+        &.outline_{
+            background-color: transparent;
+            box-shadow: 0px 0px 0px 1px var(--red-color);
+            color: var(--red-color);
+
+            .icon_{
+                &:before{
+                    background-color: var(--red-color);
+                }
+            }
+
+            &:hover{
+                color: var(--white-color);
+                background-color: var(--red-color);
+            }
+        }
+    }
 `;
 
 export const IconButtonStyled = styled.button`
@@ -282,6 +360,65 @@ export const IconButtonStyled = styled.button`
             &:hover{
                 color: var(--white-color);
                 background-color: var(--third-color-600);
+            }
+        }
+    }
+
+    &.danger_{
+        background-color: var(--red-color);
+
+        &:hover{
+            background-color: var(--red-color-600);
+            box-shadow: 0px 1px 10px 0px var(--red-color);
+        }
+
+        &.outline_{
+            background-color: transparent;
+            box-shadow: 0px 0px 0px 1px var(--red-color);
+            color: var(--red-color);
+
+            &:hover{
+                color: var(--white-color);
+                background-color: var(--red-color);
+            }
+        }
+    }
+
+    &.success_{
+        background-color: var(--green-color);
+
+        &:hover{
+            background-color: var(--green-color-600);
+            box-shadow: 0px 1px 10px 0px var(--green-color);
+        }
+
+        &.outline_{
+            background-color: transparent;
+            box-shadow: 0px 0px 0px 1px var(--green-color);
+            color: var(--green-color);
+
+            &:hover{
+                color: var(--white-color);
+                background-color: var(--green-color);
+            }
+        }
+    }
+    &.warning_{
+        background-color: var(--yellow-color);
+
+        &:hover{
+            background-color: var(--yellow-color-600);
+            box-shadow: 0px 1px 10px 0px var(--third-color);
+        }
+
+        &.outline_{
+            background-color: transparent;
+            box-shadow: 0px 0px 0px 1px var(--yellow-color);
+            color: var(--yellow-color);
+
+            &:hover{
+                color: var(--white-color);
+                background-color: var(--yellow-color);
             }
         }
     }

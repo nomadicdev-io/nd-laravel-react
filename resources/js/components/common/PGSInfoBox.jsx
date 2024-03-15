@@ -1,18 +1,19 @@
 import { InfoBoxStyled } from "../../styles/common"
-import { FaRegCircleCheck } from "react-icons/fa6";
-import { RiErrorWarningLine } from "react-icons/ri";
-import { RxCrossCircled } from "react-icons/rx";
-import { FiInfo } from "react-icons/fi";
+import {     
+  FaCircleCheck,
+  FaCircleXmark,
+  FaCircleExclamation,
+  FaCircleInfo } from "react-icons/fa6";
 
 const PGSInfoBox = ({type, title, description}) => {
   return (
       <InfoBoxStyled type={type}>
         <div className="icon_">
           {
-            type == 'success' ? <FaRegCircleCheck />
-            : type == 'warning' ? <RiErrorWarningLine />
-            : type == 'danger' ? <RxCrossCircled />
-            : <FiInfo />
+            type == 'success' ? <FaCircleCheck />
+            : type == 'warning' ? <FaCircleExclamation />
+            : type == 'danger' ? <FaCircleXmark />
+            : <FaCircleInfo />
           }
         </div>
         <div className="content_">

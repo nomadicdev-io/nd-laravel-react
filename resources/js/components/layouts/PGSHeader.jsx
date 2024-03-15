@@ -19,7 +19,7 @@ const PGSHeader = () => {
                       <a href="/" className="active_"><span>Home</span></a>
                       </li>
                       <li>
-                      <a href="/"><span>Guideline</span></a>
+                      <a href="/"><span>UI Components</span></a>
                       </li>
                       <li>
                       <a href="/"><span>Team</span></a>
@@ -28,7 +28,7 @@ const PGSHeader = () => {
                       <a href="/"><span>Gallery</span></a>
                       </li>
                       <li>
-                      <a href="/"><span>Works</span></a>
+                      <a href="/"><span>Projects</span></a>
                       </li>
                     </ul>
                 </HeaderNavStyled>

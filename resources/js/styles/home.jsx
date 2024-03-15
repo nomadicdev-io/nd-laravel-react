@@ -3,37 +3,28 @@ import styled from 'styled-components';
 export const HomeBannerStyled = styled.div`
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
     height: auto;
     overflow: hidden;
-    gap: 7.5vw;
-    padding-block: 5rem;
-    border-bottom: 2px solid var(--border-color);
-    
+    padding-top: 2.5rem;
+
     .title_{
         position: relative;
         display: block;
-        width: 50%;
+        width: 100%;
         h2{
             position: relative;
             display: block;
-            margin: 0;
+            margin: 0 0 0.5em;
             padding: 0;
-            font-size: 2.75rem;
-            font-weight: 500;
-            line-height: 1.25;
-  
-
-            strong{
-                color: var(--primary-color);
-                font-weight: bold;
-            }
+            font-size: 4rem;
+            font-weight: normal;
+            line-height: 1.5;
+            max-width: 90%;
 
             span{
-                color: var(--secondary-color-600);
-                font-weight: bold;
+                color: var(--primary-color);
             }
             
         }
@@ -41,10 +32,10 @@ export const HomeBannerStyled = styled.div`
         p{
             position: relative;
             display: block;
-            margin: 0 auto;
-            font-size: 1.1rem;
+            font-size: 1.5rem;
             margin-top: 0.5em;
             max-width: 100%;
+            max-width: 85%;
         }
     }
 
@@ -56,6 +47,7 @@ export const HomeBannerStyled = styled.div`
         width: 100%;
         margin-inline: auto;
         flex: 1;
+        margin-top: 2.5rem;
 
         .item_{
             position: relative;

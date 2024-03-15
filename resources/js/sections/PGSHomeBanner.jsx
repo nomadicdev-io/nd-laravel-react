@@ -9,8 +9,8 @@ const PGSHomeBanner = () => {
         <PGSContainer>
             <HomeBannerStyled>
                 <div className="title_">
-                    <h2><strong>PGS</strong> <span>Laravel-React</span> Toolkit</h2>
-                    <p>Elevate your design game with PGS UI Toolkit library, designed to simplify the creation of modern and responsive interfaces.</p>
+                    <h2>Hola! Welcome to <span>PGS</span> Laravel React Toolkit 1.0</h2>
+                    <p>Elevate your design game with PGS UI Toolkit library, designed to simplify the creation of modern and responsive interfaces. With an extensive range of components, themes, and utilities.</p>
                 </div>
 
                 <div className="banner_widget">

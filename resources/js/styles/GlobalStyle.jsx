@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
         --white-color: #FFF;
         --border-color: #eaf1ef;
         --green-color: #15d060;
+        --green-color-600: #00b247;
         --yellow-color: #fecb34;
         --yellow-color-600: #755700;
         --red-color: #ff4639;
@@ -33,11 +34,11 @@ const GlobalStyle = createGlobalStyle`
     }
     
     ::-webkit-scrollbar-thumb {
-        background: var(--text-color);
+        background: var(--text-color-300);
     }
     
     ::-webkit-scrollbar-thumb:hover {
-        background: var(--primary-color);
+        background: var(--text-color);
     }
 
     html {
@@ -109,6 +110,10 @@ const GlobalStyle = createGlobalStyle`
         width: 100%;
         border-bottom: 1px solid var(--border-color);
         padding-block: 1.5rem;
+
+        &:last-child{
+            border-bottom: none;
+        }
 
  
         &>h4 {

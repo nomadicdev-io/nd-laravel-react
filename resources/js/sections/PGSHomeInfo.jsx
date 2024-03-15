@@ -5,9 +5,9 @@ import PGSSection from "../components/layouts/PGSSection"
 
 const PGSHomeInfo = () => {
   return (
-    <PGSSection className={'bg_grey'}>
+    <PGSSection>
         <PGSContainer>
-            <PGSSectionTitle title={'Info Card Box'}/> 
+            <PGSSectionTitle title={'Info Box Components'}/> 
 
             <div className="info_grid">
                 <div className="info_bar full_">

@@ -1,3 +1,4 @@
+import PGSFooter from "./components/layouts/PGSFooter"
 import PGSHeader from "./components/layouts/PGSHeader"
 import PGSMain from "./components/layouts/PGSMain"
 import Home from "./pages/Home"
@@ -11,6 +12,7 @@ const App = () => {
       <PGSMain>
         <Home />
       </PGSMain>
+      <PGSFooter />
     </>
     
   )
