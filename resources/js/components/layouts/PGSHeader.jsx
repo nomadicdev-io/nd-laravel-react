@@ -32,7 +32,7 @@ const PGSHeader = () => {
                       <NavLink to="/gallery" className={({ isActive }) => (isActive ? 'active_' : '')}><span>Gallery</span></NavLink>
                       </li>
                       <li>
-                      <NavLink href="/projects" className={({ isActive }) => (isActive ? 'active_' : '')}><span>Projects</span></NavLink>
+                      <NavLink to="/projects" className={({ isActive }) => (isActive ? 'active_' : '')}><span>Projects</span></NavLink>
                       </li>
                     </ul>
                 </HeaderNavStyled>

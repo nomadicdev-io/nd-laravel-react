@@ -3,12 +3,8 @@ import ReactDOM from 'react-dom/client'
 import App from '@/App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 
-import.meta.glob([
-    '../images/**',
-]);
-
 ReactDOM.createRoot(document.getElementById('pgs-app-id')).render(
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.VITE_PUBLIC_APP_BASE_URL}>
         <App />
     </BrowserRouter>
 )

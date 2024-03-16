@@ -6,6 +6,9 @@ import Home from "./routes/home"
 import GlobalStyle from "./styles/GlobalStyle"
 
 const App = () => {
+
+  console.log(import.meta.env.VITE_PUBLIC_APP_BASE_URL)
+
   return (
     <>
       <GlobalStyle />
