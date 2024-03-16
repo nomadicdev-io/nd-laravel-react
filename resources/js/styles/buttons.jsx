@@ -54,7 +54,7 @@ export const ButtonStyled = styled.button`
         border-radius: 0.6rem;
         overflow: hidden;
         font-size: 1.35em;
-        transform: scale(0.8);
+        transform: scale(0.7);
         &:before{
             content: '';
             position: absolute;

@@ -32,7 +32,7 @@ export const HomeBannerStyled = styled.div`
         p{
             position: relative;
             display: block;
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             margin-top: 0.5em;
             max-width: 100%;
             max-width: 85%;

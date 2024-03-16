@@ -1,7 +1,8 @@
+import PGSRoutes from "./PGSRoutes"
 import PGSFooter from "./components/layouts/PGSFooter"
 import PGSHeader from "./components/layouts/PGSHeader"
 import PGSMain from "./components/layouts/PGSMain"
-import Home from "./pages/Home"
+import Home from "./routes/home"
 import GlobalStyle from "./styles/GlobalStyle"
 
 const App = () => {
@@ -10,7 +11,7 @@ const App = () => {
       <GlobalStyle />
       <PGSHeader />
       <PGSMain>
-        <Home />
+        <PGSRoutes />
       </PGSMain>
       <PGSFooter />
     </>

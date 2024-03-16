@@ -165,7 +165,7 @@ Route::controller(WebInstaller::class)->prefix('web-installer')->group(function 
 Route::controller(HomeController::class)->middleware(['IsInstallationComplete'])->group(function () {
     Route::get('/language/{lang}', 'setlanguage')->name('set_language');
     Route::match(array('GET'), '/page-not-found', 'pageNotFound')->name('error404');
-    Route::get('/', 'index')->name('home');
+    Route::get('/{any?}', 'index')->name('home');
 });
 Route::fallback(function () {
 	return redirect()->to(route('error404'));

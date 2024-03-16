@@ -40,7 +40,7 @@ export const HeaderNavStyled = styled.nav`
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        gap:0.75rem;
+        gap:0.5rem;
 
         li{
             position: relative;
