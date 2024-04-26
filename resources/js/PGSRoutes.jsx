@@ -7,14 +7,41 @@ import Projects from "./routes/projects"
 import UIComponents from "./routes/uicomponents"
 
 const PGSRoutes = () => { 
+
+  const routeData = [
+    {
+      path: '/',
+      element: <Home />
+    },
+    {
+      path: '/ui-components',
+      element: <UIComponents />
+    },
+    {
+      path: '/layouts',
+      element: <Layouts />
+    },
+    {
+      path: '/team',
+      element: <Team />
+    },
+    {
+      path: '/gallery',
+      element: <Gallery />
+    },
+    {
+      path: '/projects',
+      element: <Projects />
+    }
+  ]
+
   return (
     <Routes>
-        <Route path={'/'} element={<Home />}/>
-        <Route path={'/ui-components'} element={<UIComponents />}/>
-        <Route path={'/layouts'} element={<Layouts />}/>
-        <Route path={'/team'} element={<Team />}/>
-        <Route path={'/gallery'} element={<Gallery />}/>
-        <Route path={'/projects'} element={<Projects />}/>
+        {
+          routeData.map((item, index)=> (
+            <Route path={item.path} element={ item.element} key={'route_index' + index}/>
+          ))
+        }
     </Routes>
   )
 }

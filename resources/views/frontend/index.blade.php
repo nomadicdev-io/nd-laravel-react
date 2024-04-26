@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="{{ @$lang }}" dir="{{ (@$lang=='ar')?'rtl':'ltr' }}" class="no-js">
+<html class="no-js">
 <head>
     @include('frontend.layouts.meta')
     @include('frontend.layouts.fonts')

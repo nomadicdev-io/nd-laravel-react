@@ -4,7 +4,12 @@ import { PGSButton } from "../common/PGSButtons"
 import PGSContainer from "./PGSContainer"
 import { IoGlobeOutline } from "react-icons/io5";
 import logoImage from '$/assets/logo.svg'
+import { useTranslation } from 'react-i18next';
+
 const PGSHeader = () => {
+
+  const { i18n } = useTranslation();
+
   return (
     <HeaderStyled>
         <PGSContainer>
@@ -37,7 +42,7 @@ const PGSHeader = () => {
                     </ul>
                 </HeaderNavStyled>
 
-                <PGSButton title={'عربي'} icon={<IoGlobeOutline />} type={'button'}/>
+                <PGSButton title={i18n.language == 'en' ? 'عربي' : 'English'} icon={<IoGlobeOutline />} type={'button'} onClick={()=> i18n.changeLanguage(i18n.language == 'en' ? 'ar' : 'en')}/>
 
             </HeaderWrapperStyled>
         </PGSContainer>
